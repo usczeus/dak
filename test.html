@@ -5,13 +5,11 @@
 <h1>Test</h1>
 
 <?php
-echo "La Tuya!";
-?>
-<br><br>
-<?php
-echo '<pre>';
-var_dump(curl_version());
-echo '</pre>';
+
+  $curlVersion = shell_exec("curl --version"); 
+
+  echo "<p>Your curl version is: " . $curlVersion . "</p>";
+
 ?>
 </body>
 </html>
